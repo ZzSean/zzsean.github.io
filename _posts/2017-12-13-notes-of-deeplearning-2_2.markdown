@@ -1,4 +1,4 @@
-﻿---
+---
 
 layout:     post
 
@@ -38,16 +38,16 @@ tags:
 普通的batch梯度下降法和Mini-batch梯度下降法代价函数的变化趋势，如下图所示：![](/img/post/20171213-01.png)
 
 * batch梯度下降：
- - 对所有m个训练样本执行一次梯度下降，每次迭代时间较长；
- - Cost function总是向减小方向下降。
+  - 对所有m个训练样本执行一次梯度下降，每次迭代时间较长；
+  - Cost function总是向减小方向下降。
 
 * 随机梯度下降：
- - 对每一个训练样本执行一次梯度下降，但是丢失了向量化带来的计算加速；
- - Cost function总体的趋势向最小值的方向下降，但是无法到达全局最小值点，呈现波动的形式。
+  - 对每一个训练样本执行一次梯度下降，但是丢失了向量化带来的计算加速；
+  - Cost function总体的趋势向最小值的方向下降，但是无法到达全局最小值点，呈现波动的形式。
 
 * Mini-Batch梯度下降：
- - 选择一个1<size<m的合适的size进行Mini-batch梯度下降，可以实现快速学习，也应用了向量化带来的好处；
- - Cost function的下降处于前两者之间。
+  - 选择一个1<size<m的合适的size进行Mini-batch梯度下降，可以实现快速学习，也应用了向量化带来的好处；
+  - Cost function的下降处于前两者之间。
 ![](/img/post/20171213-02.png)
 
 **Mini-batch 大小的选择**
@@ -144,12 +144,12 @@ Adam 优化算法的基本思想就是将 Momentum 和 RMSprop 结合起来形�
 
 * 初始化：\\(V_{dw} = 0，S_{dw}=0，V_{db}=0，S_{db} = 0\\)
 * 第t次迭代：
- - Compute \\(dw，db\\) on the current mini-batch
- - \\(V_{dw}=\beta_{1}V_{dw}+(1-\beta_{1})dw，V_{db}=\beta_{1}V_{db}+(1-\beta_{1})db\\)<–"Momentum"
- - \\(S_{dw}=\beta_{2}S_{dw}+(1-\beta_{2})(dw)^{2}，S_{db}=\beta_{2}S_{db}+(1-\beta_{2})(db)^{2}\\)<-"RMSprop"
- - \\(V_{dw}^{corrected} = V_{dw}/(1-\beta_{1}^{t})，V_{db}^{corrected} = V_{db}/(1-\beta_{1}^{t})\\)<-偏差修正
- - \\(S_{dw}^{corrected} = S_{dw}/(1-\beta_{2}^{t})，S_{db}^{corrected} = S_{db}/(1-\beta_{2}^{t})\\)<-偏差修正
- - \\(w:=w-\alpha\dfrac{V_{dw}^{corrected}}{\sqrt{S_{dw}^{corrected}}+\varepsilon}，b:=b-\alpha\dfrac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}}+\varepsilon}\\)
+  - Compute \\(dw，db\\) on the current mini-batch
+  - \\(V_{dw}=\beta_{1}V_{dw}+(1-\beta_{1})dw，V_{db}=\beta_{1}V_{db}+(1-\beta_{1})db\\)<–"Momentum"
+  - \\(S_{dw}=\beta_{2}S_{dw}+(1-\beta_{2})(dw)^{2}，S_{db}=\beta_{2}S_{db}+(1-\beta_{2})(db)^{2}\\)<-"RMSprop"
+  - \\(V_{dw}^{corrected} = V_{dw}/(1-\beta_{1}^{t})，V_{db}^{corrected} = V_{db}/(1-\beta_{1}^{t})\\)<-偏差修正
+  - \\(S_{dw}^{corrected} = S_{dw}/(1-\beta_{2}^{t})，S_{db}^{corrected} = S_{db}/(1-\beta_{2}^{t})\\)<-偏差修正
+  - \\(w:=w-\alpha\dfrac{V_{dw}^{corrected}}{\sqrt{S_{dw}^{corrected}}+\varepsilon}，b:=b-\alpha\dfrac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}}+\varepsilon}\\)
  
 **超参数的选择**
 
