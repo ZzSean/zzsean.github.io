@@ -1,0 +1,27 @@
+﻿---
+
+layout:     post
+
+title:      "Things"
+
+subtitle:   " 杂七杂八 "
+
+date:       2017-12-14 20:42:00
+
+author:     "Zz"
+
+header-img: ""
+
+catalog: false
+
+tags:
+
+    - python
+
+---
+
+细琐的知识点和心得|
+
+* **python**
+
+    append追加的对象是引用，可改变。
