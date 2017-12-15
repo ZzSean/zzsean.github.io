@@ -31,3 +31,25 @@ tags:
 	分辨率 = N / Fs
 	
 	N：fft点数，Fs：采样率
+
+* **python**
+
+	python引用变量的顺序： 当前作用域局部变量->外层作用域变量->当前模块中的全局变量->python内置变量
+
+	`global`关键字用来在函数或其他局部作用域中使用全局变量。但是如果不修改全局变量也可以不使用global关键字。**定义在函数外**
+
+	`nonlocal`关键字用来在函数或其他作用域中使用外层(非全局)变量。**用于函数嵌套中**
+
+	``` python
+
+	def make_counter():
+    count = 0
+    def counter():
+        nonlocal count
+        count += 1
+        return count
+    return counter
+
+    ```
+
+    
