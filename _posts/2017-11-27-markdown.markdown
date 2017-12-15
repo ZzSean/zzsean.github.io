@@ -4,7 +4,7 @@ title:      "Markdown"
 subtitle:   " How to use markdown"
 date:       2017-11-27 14:23:00
 author:     "Zz"
-header-img: ""
+header-img: "img/default-bg.jpeg"
 catalog: false
 tags:
     - life

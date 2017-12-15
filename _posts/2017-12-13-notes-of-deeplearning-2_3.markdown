@@ -10,7 +10,7 @@ date:       2017-12-13 20:42:00
 
 author:     "Zz"
 
-header-img: ""
+header-img: "img/default-bg.jpeg"
 
 catalog: true
 

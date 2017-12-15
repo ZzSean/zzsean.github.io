@@ -4,7 +4,7 @@ title:      "Notes of DeepLearning 1_4"
 subtitle:   " 深层神经网络 "
 date:       2017-11-28 14:32:23
 author:     "Zz"
-header-img: ""
+header-img: "img/default-bg.jpeg"
 catalog: false
 tags:
     - deep learning
