@@ -25,3 +25,8 @@ tags:
 * **python**
 
     append追加的对象是引用，可改变。
+
+* **fft**
+
+	分辨率 = N / Fs
+	N：fft点数，Fs：采样率
