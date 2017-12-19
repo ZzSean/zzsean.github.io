@@ -55,3 +55,11 @@ def make_counter():
 
 	安装past模块
 	>pip install future
+	
+* **Ubuntu**
+	
+	搜狗输入法中文乱码
+	``` python
+	cd  ~/.config
+	rm -rf SogouPY* sogou*
+	```
