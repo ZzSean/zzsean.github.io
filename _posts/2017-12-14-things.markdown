@@ -51,4 +51,7 @@ def make_counter():
   return counter
 ```
 
-    
+* **python**
+
+	安装past模块
+	>pip install future
