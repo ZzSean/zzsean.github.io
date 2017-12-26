@@ -45,13 +45,13 @@ tags:
 
 * Precision(查准率)：
 
-//[Precision = \dfrac{True\ positive}{Number\ of\ predicted\ positive} \times 100\%= \dfrac{True\ positive}{True\ positive + False\ positive}\\]
+\\[Precision = \dfrac{True\ positive}{Number\ of\ predicted\ positive} \times 100\%= \dfrac{True\ positive}{True\ positive + False\ positive}\\]
 
 假设在是否为猫的分类问题中，查准率代表：所有模型预测为猫的图片中，确实为猫的概率。
 
 * Recall(查全率)：
 
-//[Recall = \dfrac{True\ positive}{Number\ of\  actually\ positive} \times 100\%= \dfrac{True\ positive}{True\ positive + False\ negative}\\]
+\\[Recall = \dfrac{True\ positive}{Number\ of\  actually\ positive} \times 100\%= \dfrac{True\ positive}{True\ positive + False\ negative}\\]
 
 假设在是否为猫的分类问题中，查全率代表：真实为猫的图片中，预测正确的概率。
 
@@ -83,18 +83,18 @@ tags:
 
 假设开始我们的评估指标如下：
 
-\\[Error = \dfrac{1}{m_{dev}}\sum\limits_{i=1}^{m_{dev}}I\{y^{(i)}_{pred}\neq y^{(i)}\}\\]
+\\[Error = \dfrac{1}{m_{dev}}\sum\limits_{i=1}^{m_{dev}}I\\{y^{(i)}_{pred}\neq y^{(i)}\\}\\]
 
 该评估指标对色情图片和非色情图片一视同仁，但是我们希望，分类器不会错误将色情图片标记为猫。
 
 修改的方法，在其中加入权重\\(w^{(i)}\\):
 
-\\[Error = \dfrac{1}{\sum w^{(i)}}\sum\limits_{i=1}^{m_{dev}} w^{(i)}I\{y^{(i)}_{pred}\neq y^{(i)}\}\\]
+\\[Error = \dfrac{1}{\sum w^{(i)}}\sum\limits_{i=1}^{m_{dev}} w^{(i)}I\\{y^{(i)}_{pred}\neq y^{(i)}\\}\\]
 
 其中：
 
-\\[w^{(i)}=\left\{ \begin{array}{l}
-1\qquad \qquad \qquad 如果x^{(i)}不是色情图片\\
+\\[w^{(i)}=\left\\{ \begin{array}{l}
+1\qquad \qquad \qquad 如果x^{(i)}不是色情图片\\\
 10或100\qquad \qquad如果x^{(i)}是色情图片
 \end{array} \right.\\]
 
