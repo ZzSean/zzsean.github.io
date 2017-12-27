@@ -41,15 +41,15 @@ tags:
 	`nonlocal`关键字用来在函数或其他作用域中使用外层(非全局)变量。**用于函数嵌套中**
 
 
-``` python
-def make_counter():
-  count = 0
-  def counter():
-    nonlocal count
-    count += 1
-    return count
-  return counter
-```
+    ``` python
+    def make_counter():
+    count = 0
+    def counter():
+        nonlocal count
+        count += 1
+        return count
+    return counter
+    ```
 
 * **python**
 
@@ -59,7 +59,33 @@ def make_counter():
 * **Ubuntu**
 	
 	搜狗输入法中文乱码
-	``` python
+	``` 
 	cd  ~/.config
 	rm -rf SogouPY* sogou*
 	```
+
+* **Sublime**
+
+    预览Markdown
+
+    - package：markdown editting
+    - package：markdown preview
+    - key binding user：
+  
+    ``` javascript
+    [
+        {"keys": ["alt+m"], "command": "markdown_preview", "args": { "target": "browser"}}
+    ]
+    ```
+
+    - 设置语法高亮和mathjax支持(preview setting user)
+  
+    ``` javascript
+    "enable_mathjax": true,
+
+    "enable_highlight": true,
+    ```
+
+
+
+
