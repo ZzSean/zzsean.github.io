@@ -59,7 +59,7 @@ def make_counter():
 * **Ubuntu**
 	
 	搜狗输入法中文乱码
-	``` python
+	``` 
 	cd  ~/.config
 	rm -rf SogouPY* sogou*
 	```
@@ -72,15 +72,15 @@ def make_counter():
     - package：markdown preview
     - key binding user：
   
-    ```
+    ``` javascript
     [
-    {"keys": ["alt+m"], "command": "markdown_preview", "args": { "target": browser"}}
+        {"keys": ["alt+m"], "command": "markdown_preview", "args": { "target": "browser"}}
     ]
     ```
 
     - 设置语法高亮和mathjax支持(preview setting user)
   
-    ```
+    ``` javascript
     "enable_mathjax": true,
 
     "enable_highlight": true,
