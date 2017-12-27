@@ -63,3 +63,29 @@ def make_counter():
 	cd  ~/.config
 	rm -rf SogouPY* sogou*
 	```
+
+* **Sublime**
+
+    预览Markdown
+
+    - package：markdown editting
+    - package：markdown preview
+    - key binding user：
+  
+    ```
+    [
+    {"keys": ["alt+m"], "command": "markdown_preview", "args": { "target": browser"}}
+    ]
+    ```
+
+    - 设置语法高亮和mathjax支持(preview setting user)
+  
+    ```
+    "enable_mathjax": true,
+
+    "enable_highlight": true,
+    ```
+
+
+
+
