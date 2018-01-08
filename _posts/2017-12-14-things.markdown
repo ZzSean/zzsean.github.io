@@ -86,6 +86,20 @@ tags:
     "enable_highlight": true,
     ```
 
+* **Java**
+
+**Windows命令行运行JAVA程序环境配置**
+
+  - 用户变量：JAVA_HOME：JAVA安装目录
+  - 系统变量：CLASSPATH：JAVA安装目录\lib\dt.jar;JAVA安装目录\lib\tools.jar;所需要的第三方jar包
+  - 系统变量：PATH：JAVA安装目录\bin;JAVA安装目录\jre\bin
+
+**编译及运行**
+
+  - 编译：进入程序目录，`javac ***.java`
+  - 运行：进入最顶层包的上级目录，`java package_name.package_name.***` (可能有好几个包名)
+
+
 
 
 
