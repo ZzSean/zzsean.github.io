@@ -136,16 +136,16 @@ $ rm -r targetDirectory
 ```
 
 8. 测试
-```
-$ python
-import tensorflow as tf
-hello = tf.constant('Hello, TensorFlow!')
-sess = tf.Session()
-print(sess.run(hello))
-```
-如果安装成功，会出现如下结果
-```
-Hello, TensorFlow!
-```
+  ```
+  $ python
+  import tensorflow as tf
+  hello = tf.constant('Hello, TensorFlow!')
+  sess = tf.Session()
+  print(sess.run(hello))
+  ```
+  如果安装成功，会出现如下结果
+  ```
+  Hello, TensorFlow!
+  ```
 
 **Congratulations！** 
