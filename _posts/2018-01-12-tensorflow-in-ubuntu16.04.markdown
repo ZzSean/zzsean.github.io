@@ -137,6 +137,7 @@ $ rm -r targetDirectory
 
 8. 测试
 ```
+
 $ python
 
 import tensorflow as tf
