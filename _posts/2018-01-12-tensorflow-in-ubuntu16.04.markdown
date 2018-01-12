@@ -136,10 +136,8 @@ $ rm -r targetDirectory
 ```
 
 8. 测试
-
 ```
 $ python
-
 import tensorflow as tf
 hello = tf.constant('Hello, TensorFlow!')
 sess = tf.Session()
