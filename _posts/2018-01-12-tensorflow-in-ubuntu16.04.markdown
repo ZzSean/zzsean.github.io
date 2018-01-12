@@ -144,7 +144,6 @@ hello = tf.constant('Hello, TensorFlow!')
 sess = tf.Session()
 print(sess.run(hello))
 ```
-
 如果安装成功，会出现如下结果
 ```
 Hello, TensorFlow!
