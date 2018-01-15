@@ -43,7 +43,9 @@ Missing recommended library: libXi.so
 Missing recommended library: libXmu.so
 ```
 命令行运行以下代码并重新安装CUDA
-`sudo apt-get install freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libgl1-mesa-glx libglu1-mesa libglu1-mesa-dev `
+```
+sudo apt-get install freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libgl1-mesa-glx libglu1-mesa libglu1-mesa-dev
+```
 
 
 
