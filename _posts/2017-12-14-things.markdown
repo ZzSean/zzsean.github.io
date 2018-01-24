@@ -99,6 +99,21 @@ tags:
     - 编译：进入程序目录，`javac ***.java`
     - 运行：进入最顶层包的上级目录，`java package_name.package_name.***` (可能有好几个包名)
 
+* **NumPy**
+
+    函数numpy.add.at
+    np.add.at(a,indices,b) 
+    假设a.shape=[N,T,D]，且b.shape = [N,T,D]/[T,D]/[D]，则相当于
+    ```
+    for indice in indices:
+    a[indice] += b
+    ```
+
+    一种特殊情况是b.shape=[len(indices),N,T,D]，则相当于：
+    ```
+    for index,indice in enumerate(indices):
+    a[indice] += b[index]
+    ```
 
 
 
