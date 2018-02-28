@@ -119,5 +119,6 @@ tags:
 
     ciw文件import选择ISI-CE
 
+* **Word**
 
-
+    尾注加方括号^e替换为[^&]
