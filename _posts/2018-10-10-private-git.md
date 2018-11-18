@@ -69,6 +69,8 @@ scp -P [Port] id_rsa.pub git@[IP]:/home/git/
 #if no .ssh/ or no id_rsa.pub in .ssh/
 ssh-keygen
 cat id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 600 authorized_keys
+chmod 700 -R .ssh/
 ```
 
 ## Git
