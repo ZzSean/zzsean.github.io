@@ -25,7 +25,7 @@ git|
 ## SSH connect
 
 ```
-ssh root@[IP]:[Port]
+ssh -p [port] root@[IP]
 ```
 
 ## Install Git
@@ -79,6 +79,7 @@ chmod 700 -R .ssh/
 git clone ssh://git@[IP]:[Port]/home/git/xxx.git
 ```
 
+更换ip之后需要重新登陆，以及更改.git/config中的ip
 
 
 
