@@ -36,7 +36,7 @@ https://code.visualstudio.com
 
 ## Settings
 
-```json
+```
 {
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
@@ -124,9 +124,9 @@ https://code.visualstudio.com
 
 ## ShortCuts
 
-For MacOS: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
+For MacOS: <https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf>
 
-For Windows: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+For Windows: <https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf>
 
 **Customized**
 
