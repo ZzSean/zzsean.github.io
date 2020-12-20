@@ -1,0 +1,107 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "editor.rulers": [100],
+  "editor.lineNumbers": "relative",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.quickSuggestions": true,
+  "editor.fontSize": 15,
+  // vim
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "Z",
+        "Z"
+      ],
+      "commands": [
+        ":wq"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    //{
+    //    "before": [
+    //        ">"
+    //    ],
+    //    "commands": [
+    //        "editor.action.indentLines"
+    //    ]
+    //},
+    //{
+    //    "before": [
+    //        "<"
+    //    ],
+    //    "commands": [
+    //        "editor.action.outdentLines"
+    //    ]
+    //},
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-d>": false,
+    "<C-f>": false,
+    "<C-y>": false
+  },
+}
