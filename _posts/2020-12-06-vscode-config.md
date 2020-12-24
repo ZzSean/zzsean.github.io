@@ -267,6 +267,8 @@ For Windows: <https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows
 3. Maximum terminal: Command + M(MacOS), Ctrl + F11(Windows)
 4. Toggle terminal: Ctrl/Command + `/J
 5. Toggle minimap: Alt/Command + Shift + A
+6. Toggle Vim: Alt/Option + `
+7. Toggle ActivityBar: Alt/Option + Ctrl/Command + A
 
 Tips: **_Command_** for VSCode, **_Ctrl_** for Vim. 
 
