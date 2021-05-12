@@ -29,19 +29,22 @@ https://code.visualstudio.com
 ## Plugin
 
 1. Vim: https://github.com/VSCodeVim/Vim
-2. C/C++
+2. C/C++：https://github.com/microsoft/vscode-cpptools
 3. GitLens
-4. Python
+4. Pytho, Pylance
 5. Chinese (optional)
 6. LaTex Workshop
 7. Trailing Spaces
+8. Viscose-cudacpp
+9. Dark-plus-syntax
 
 ## Settings
 
 ```
 {
   "files.trimTrailingWhitespace": true,
-  "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+  "editor.fontFamily": "Monaco, Meslo LG S for Powerline",
+  "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
   "C_Cpp.updateChannel": "Insiders",
   "editor.rulers": [
     80
@@ -51,10 +54,22 @@ https://code.visualstudio.com
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
   "editor.suggest.shareSuggestSelections": true,
   "editor.quickSuggestions": true,
-  "editor.fontSize": 15,
+  "workbench.editor.enablePreview": false,
+  "editor.fontSize": 13,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        },
+      },
+    ]
+  },
   // vim
   "vim.easymotion": true,
   "vim.incsearch": true,
@@ -251,6 +266,14 @@ https://code.visualstudio.com
     "0",
     "%PDF%",
   ],
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "dark-plus-syntax",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
 }
 ```
 
@@ -267,11 +290,10 @@ For Windows: <https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows
 3. Maximum terminal: Command + M(MacOS), Ctrl + F11(Windows)
 4. Toggle terminal: Ctrl/Command + `/J
 5. Toggle minimap: Alt/Command + Shift + A
-6. Toggle Vim: Alt/Option + `
+6. Toggle Vim: Shift + Alt/Command + i
 7. Toggle ActivityBar: Alt/Option + Ctrl/Command + A
 
 Tips: **_Command_** for VSCode, **_Ctrl_** for Vim. 
-
 
 
 
