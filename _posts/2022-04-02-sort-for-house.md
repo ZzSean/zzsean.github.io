@@ -15,12 +15,10 @@ catalog: true
 
 tags:
 
-    - daily
+    - life
 
 
 ---
-
-daily|
 
 # Intro
 
