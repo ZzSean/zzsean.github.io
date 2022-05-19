@@ -295,6 +295,12 @@ For Windows: <https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows
 
 Tips: **_Command_** for VSCode, **_Ctrl_** for Vim. 
 
+## Tips
+
+In MacOS, long press jk cannot move the cursor, type this command in terminal and reboot VSCode
+
+`defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false`
+
 
 
 
