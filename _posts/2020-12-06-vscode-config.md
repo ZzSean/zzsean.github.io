@@ -1,5 +1,4 @@
 ---
-
 layout:     post
 
 title:      "Vscode"
@@ -17,9 +16,7 @@ catalog: true
 tags:
 
     - vscode
-
 ---
-
 vscode|
 
 ## Download
@@ -42,22 +39,33 @@ https://code.visualstudio.com
 
 ```
 {
+  "workbench.colorTheme": "One Dark Pro Monokai Darker",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
   "files.trimTrailingWhitespace": true,
   "editor.fontFamily": "Monaco, Meslo LG S for Powerline",
-  "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
-  "C_Cpp.updateChannel": "Insiders",
+  "terminal.integrated.fontFamily": "Monaco, Meslo LG S for Powerline",
+  "C_Cpp.autocomplete": "default",
+  "[cpp]": {
+    "editor.wordBasedSuggestions": true
+  },
+  "[c]": {
+    "editor.wordBasedSuggestions": true
+  },
   "editor.rulers": [
     80
   ],
   "editor.lineNumbers": "relative",
-  //"editor.defaultFormatter": "ms-vscode.cpptools",
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.tabSize": 2,
   "editor.suggest.shareSuggestSelections": true,
-  "editor.quickSuggestions": true,
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "strings": "on",
+    "other": "on"
+  },
   "workbench.editor.enablePreview": false,
-  "editor.fontSize": 13,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -70,7 +78,27 @@ https://code.visualstudio.com
       },
     ]
   },
-  // vim
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "files.associations": {
+    "*.cu": "cpp",
+    "*.cuh": "cpp",
+    "*.md": "markdown"
+  },
+  "editor.quickSuggestionsDelay": 1,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "latex-workshop.view.pdf.viewer": "tab",
+  "workbench.startupEditor": "none",
+
+  /////////////////////////////// vim begin ///////////////////////////////////
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -166,7 +194,9 @@ https://code.visualstudio.com
     "<C-f>": false,
     "<C-y>": false
   },
-  // latex
+  /////////////////////////////// vim end //////////////////////////////////////
+
+  ///////////////////////////// latex begin ///////////////////////////////////
   "latex-workshop.latex.tools": [
     {
       // 编译工具和命令
@@ -253,35 +283,34 @@ https://code.visualstudio.com
     "*.log",
     "*.fdb_latexmk",
   ],
-  "latex-workshop.view.pdf.viewer": "external",
-  "latex-workshop.view.pdf.external.synctex.command": "/Applications/Skim.app/Contents/SharedSupport/displayline",
-  "latex-workshop.view.pdf.external.synctex.args": [
-    "-r",
-    "%LINE%",
-    "%PDF%",
-    "%TEX%"
-  ],
-  "latex-workshop.view.pdf.external.viewer.command": "/Applications/Skim.app/Contents/SharedSupport/displayline",
-  "latex-workshop.view.pdf.external.viewer.args": [
-    "0",
-    "%PDF%",
-  ],
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "dark-plus-syntax",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  // "latex-workshop.view.pdf.viewer": "external",
+  // "latex-workshop.view.pdf.external.synctex.command": "/Applications/Skim.app/Contents/SharedSupport/displayline",
+  // "latex-workshop.view.pdf.external.synctex.args": [
+  //   "-r",
+  //   "%LINE%",
+  //   "%PDF%",
+  //   "%TEX%"
+  // ],
+  // "latex-workshop.view.pdf.external.viewer.command": "/Applications/Skim.app/Contents/SharedSupport/displayline",
+  // "latex-workshop.view.pdf.external.viewer.args": [
+  //   "0",
+  //   "%PDF%",
+  // ],
+  // SyncTex
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.synctex.path": "synctex",
+  "latex-workshop.synctex.synctexjs.enabled": true,
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
+  /////////////////////////////// latex end ///////////////////////////////////
+
 }
 ```
 
 ## ShortCuts
 
-For MacOS: <https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf>
+For MacOS: [https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 
-For Windows: <https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf>
+For Windows: [https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 
 **Customized**
 
@@ -293,23 +322,10 @@ For Windows: <https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows
 6. Toggle Vim: Shift + Alt/Command + i
 7. Toggle ActivityBar: Alt/Option + Ctrl/Command + A
 
-Tips: **_Command_** for VSCode, **_Ctrl_** for Vim. 
+Tips: **_Command_** for VSCode, **_Ctrl_** for Vim.
 
 ## Tips
 
 In MacOS, long press jk cannot move the cursor, type this command in terminal and reboot VSCode
 
 `defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false`
-
-
-
-
-
-
-
-
-
-
-
-
-
